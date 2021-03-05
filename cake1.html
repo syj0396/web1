@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>허니케이크</title>
+  <style>
+  #whole {
+    padding:70px;
+  }
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  h1 {
+    font-size:45px;
+    text-align:center;
+    border-bottom:1px solid #aaaaaa;
+    margin:0;
+    padding:40px;
+  }
+  ul {
+    border-right:1px solid #aaaaaa;
+    width:100px;
+    margin:0;
+    padding:20px;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ul{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
+  }
+  #grid #article{
+    padding-left:90px;
+    width: 1800px;
+    height: 600px;
+  }
+  .image {
+    padding-right:25px;
+    width:50%;
+  }
+  p {
+    font-size: 18px;
+  }
+  ul.mylist {
+    list-style: none;
+    margin:0px;
+    padding:0px;
+    max-width:900px;
+    width:100%;
+  }
+  ul.mylist li {
+    padding: 10px;
+    border-bottom: 1px solid #aaaaaa;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  img {
+    width:40%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    float: left;
+  }
+  img { margin-right: 40px;}
+  h2 {
+    color:#505050;
+    font-size: 28px;
+    margin-top: 50px;
+  }
+  h3 {
+    color: #505050;
+    font-size: 23px;
+    border-top:1px solid #aaaaaa;
+    padding-top: 20px;
+  }
+  ol li {
+    font-size: 18px;
+    padding-top: 8px;
+  }
+  #current{
+    font-weight: bold;
+    color: #505050;
+  }
+  #source {
+    text-decoration: underline;
+  }
+  </style>
+</head>
+<body>
+  <div id="whole">
+    <h1><a href="index.html">Let's make bbang!</a></h1>
+    <div id="grid">
+      <ul class="mylist">
+        <li><a href="cookie.html">Cookie</a></li>
+        <li><a href="cake.html" id="current">Cake</a></li>
+        <li><a href="etc.html">Etc</a></li>
+      </ul>
+      <div id="article">
+        <img src="cake1.jpg">
+        <h2>Honey cake</h2>
+        <h3>Ingredients</h3>
+        <p>박력분 또는 중력분 200g, 베이킹파우더 5g, 소금 1g, 꿀 160g, 버터 150g, 설탕 50g,  계란 2개</p>
+        <h3>Recipe</h3>
+        <ol>
+          <li>버터, 설탕 꿀을 냄비에 넣고 약불에서 녹여준다.</li>
+          <li>박력분 또는 중력분, 베이킹파우더, 소금을 체 쳐 내려준다.</li>
+          <li>계란을 풀어준 후, 식혀 둔 버터+꿀+설탕에 넣어 섞어준다.</li>
+          <li>체 친 가루 재료를 2~3번 나눠 넣어 반죽한다.</li>
+          <li>팬에 반죽을 넣고 160도 예열 후 40분 구워준다.</li>
+          <li>홍차와 먹으면 더 맛있다!!</li>
+        </ol>
+        <h3>Source</h3>
+        <p>원본 영상을 보려면
+        <a href="https://www.youtube.com/watch?v=FA6jeaG4RIs" target="_blank" title="녹차체크쿠키 레시피" id="source">여기</a>를 클릭해주세요 :)</p>
+     </div>
+   </div>
+  </div>
+</body>
+</html>

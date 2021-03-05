@@ -1,27 +1,105 @@
 <!doctype html>
 <html>
 <head>
-  <title>test-site</title>
   <meta charset="utf-8">
+  <title>송예진-웹사이트 소개</title>
+  <style>
+  #whole {
+    padding:70px;
+  }
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  h1 {
+    font-size:45px;
+    text-align:center;
+    border-bottom:1px solid #aaaaaa;
+    margin:0;
+    padding:40px;
+  }
+  ul {
+    border-right:1px solid #aaaaaa;
+    width:100px;
+    margin:0;
+    padding:20px;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ul{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
+  }
+  #grid #article{
+    padding-left:90px;
+  }
+  p {
+    font-size: 18px;
+  }
+  ul.mylist {
+    list-style: none;
+    margin:0px;
+    padding:0px;
+    max-width:900px;
+    width:100%;
+  }
+  ul.mylist li {
+    padding: 10px;
+    border-bottom: 1px solid #aaaaaa;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  img {
+    width:50%;
+    padding-top: 50px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .item:nth-child(1) {
+    grid-column:1/3;
+    grid-row:1/3;
+  }
+  /*#grid #image {
+    grid-template-columns: 2fr 1fr;
+  }*/
+  h2, h3, strong {
+    color:#505050;
+  }
+  </style>
 </head>
 <body>
-  <h1><a href="index.html">Let's make bbang!</a></h1>
-  <ul>
-    <li><a href="cookie.html">Cookie</a></li>
-    <li><a href="cake.html">Cake</a></li>
-    <li><a href="etc.html">Etc</a></li>
-  </ul>
-  <img src="instagram.jpg" width="25%">
-  <img src="me.jpg" width=25%>
-  <h2>웹 사이트를 소개합니다.</h2>
-  <h3>하나,</h3>
-  <p>
-  코로나로 인해 바깥 활동을 자제해야 했던 이번 겨울방학, 저는 새로운 취미를 찾았습니다.
-바로 홈베이킹인데요, 미숙한 실력이지만 유튜브 영상을 보며 이것저것 만들고 지인들에게 선물하기도 했습니다:)
-<strong>쿠키, 케이크, 기타로 목차를 구성했고, 각각을 클릭하면 베이킹 사진이 나오도록 만들었습니다.</strong></p>
-  <h3>둘,</h3>
-  <p>누군가의 일상, 패션 등의 게시물을 보면서 자신의 취향과 맞는 것을 보면
-    사진 속의 장소가 어디인지, 어디서 산 제품인지 궁금해지기 마련입니다.
-   저는 <strong>제가 만든 빵 사진을 클릭하면 그 레시피와 레시피 영상을 볼 수 있도록</strong> 만들었습니다.</p>
+  <div id="whole">
+    <h1><a href="index.html">Let's make bbang!</a></h1>
+    <div id="grid">
+      <ul class="mylist">
+        <li><a href="cookie.html">Cookie</a></li>
+        <li><a href="cake.html">Cake</a></li>
+        <li><a href="etc.html">Etc</a></li>
+      </ul>
+      <div id="article">
+        <div class="container">
+          <div class="item"><img src="cookie3.jpg"></div>
+          <div class="item"><img src="cake3.jpg"></div>
+          <div class="item"><img src="etc2.jpg"></div>
+        </div>
+        <h2>웹 사이트를 소개합니다.</h2>
+        <h3>하나,</h3>
+        <p>
+        코로나로 인해 바깥 활동을 자제해야 했던 이번 겨울방학, 저는 새로운 취미를 찾았습니다.
+      바로 홈베이킹인데요, <br>
+      미숙한 실력이지만 유튜브 영상을 보며 이것저것 만들고 지인들에게 선물하기도 했습니다:)<br>
+      <strong>Cookie, Cake, Etc로 목차를 구성했고, 각각을 클릭하면 베이킹 사진이 나오도록 만들었습니다.</strong></p>
+        <h3>둘,</h3>
+        <p>누군가의 일상, 패션 등의 게시물을 보면서 자신의 취향과 맞는 것을 보면 사진 속의 장소가 어디인지, 어디서 산 제품인지 궁금해지기 마련입니다.<br>
+          저는 <strong>제가 만든 빵 사진을 클릭하면 그 레시피와 레시피 영상을 볼 수 있도록</strong> 만들었습니다.</p>
+     </div>
+  </div>
+</div>
 </body>
 </html>

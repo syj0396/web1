@@ -34,10 +34,11 @@
     padding-top:20px;
   }
   #grid #article{
+    display:grid;
+    grid-template-columns:1fr 1fr;
     padding-left:90px;
-    width: 1800px;
-    height: 600px;
   }
+  #info {padding-left:30px;}
   .image {
     padding-right:25px;
     width:50%;
@@ -59,7 +60,7 @@
     font-size: 18px;
   }
   img {
-    width:40%;
+    width:100%;
     padding-top: 50px;
     padding-bottom: 50px;
     float: left;
@@ -100,21 +101,23 @@
       </ul>
       <div id="article">
         <img src="cake1.jpg">
-        <h2>Honey cake</h2>
-        <h3>Ingredients</h3>
-        <p>박력분 또는 중력분 200g, 베이킹파우더 5g, 소금 1g, 꿀 160g, 버터 150g, 설탕 50g,  계란 2개</p>
-        <h3>Recipe</h3>
-        <ol>
-          <li>버터, 설탕 꿀을 냄비에 넣고 약불에서 녹여준다.</li>
-          <li>박력분 또는 중력분, 베이킹파우더, 소금을 체 쳐 내려준다.</li>
-          <li>계란을 풀어준 후, 식혀 둔 버터+꿀+설탕에 넣어 섞어준다.</li>
-          <li>체 친 가루 재료를 2~3번 나눠 넣어 반죽한다.</li>
-          <li>팬에 반죽을 넣고 160도 예열 후 40분 구워준다.</li>
-          <li>홍차와 먹으면 더 맛있다!!</li>
-        </ol>
-        <h3>Source</h3>
-        <p>원본 영상을 보려면
-        <a href="https://www.youtube.com/watch?v=FA6jeaG4RIs" target="_blank" title="녹차체크쿠키 레시피" id="source">여기</a>를 클릭해주세요 :)</p>
+        <div id="info">
+          <h2>Honey cake</h2>
+          <h3>Ingredients</h3>
+          <p>박력분 또는 중력분 200g, 베이킹파우더 5g, 소금 1g, 꿀 160g, 버터 150g, 설탕 50g,  계란 2개</p>
+          <h3>Recipe</h3>
+          <ol>
+            <li>버터, 설탕 꿀을 냄비에 넣고 약불에서 녹여준다.</li>
+            <li>박력분 또는 중력분, 베이킹파우더, 소금을 체 쳐 내려준다.</li>
+            <li>계란을 풀어준 후, 식혀 둔 버터+꿀+설탕에 넣어 섞어준다.</li>
+            <li>체 친 가루 재료를 2~3번 나눠 넣어 반죽한다.</li>
+            <li>팬에 반죽을 넣고 160도 예열 후 40분 구워준다.</li>
+            <li>홍차와 먹으면 더 맛있다!!</li>
+          </ol>
+          <h3>Source</h3>
+          <p>원본 영상을 보려면
+          <a href="https://www.youtube.com/watch?v=FA6jeaG4RIs" target="_blank" title="허니케이크 레시피" id="source">여기</a>를 클릭해주세요 :)</p>
+        </div>
      </div>
    </div>
   </div>

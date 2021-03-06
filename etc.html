@@ -1,35 +1,106 @@
 <!doctype html>
 <html>
 <head>
-  <title>test-site</title>
   <meta charset="utf-8">
+  <title>etc.</title>
   <style>
+  #whole {
+    padding:70px;
+  }
   a {
     color:black;
     text-decoration: none;
   }
   h1 {
-    font-size: 45px;
-    text-align: center;
-    border-bottom:1px solid gray;
+    font-size:45px;
+    text-align:center;
+    border-bottom:1px solid #aaaaaa;
     margin:0;
-    padding:20px;
+    padding:40px;
   }
   ul {
-    border-right:1px solid gray;
+    border-right:1px solid #aaaaaa;
     width:100px;
     margin:0;
     padding:20px;
   }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ul{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
+  }
+  #grid #article{
+    display: grid;
+    grid-template-rows:50px 1fr 1fr;
+    padding-left:90px;
+    padding-top:20px;
+  }
+  #current{
+    font-weight: bold;
+    color: #505050;
+  }
+  p {
+    font-size: 18px;
+  }
+  ul.mylist {
+    list-style: none;
+    margin:0px;
+    padding:0px;
+    max-width:900px;
+    width:100%;
+  }
+  ul.mylist li {
+    padding: 10px;
+    border-bottom: 1px solid #aaaaaa;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  img {
+    width:100%;
+    height:100%;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top:10px;
+  }
+  .image {padding-right: 20px;}
+  #text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align:center;
+  }
+  h2, h3, strong {
+    color:#505050;
+  }
   </style>
 </head>
 <body>
-  <h1><a href="index.html">Let's make bbang!</a></h1>
-  <ul>
-    <li><a href="cookie.html">Cookie</a></li>
-    <li><a href="cake.html">Cake</a></li>
-    <li><a href="etc.html">Etc</a></li>
-  </ul>
-  <img src="etc1.jpg" width="25%">
-  <img src="etc2.jpg" width="25%">
-  <img src="etc3.jpg" width="25%">
+  <div id="whole">
+    <h1><a href="index.html">Let's make bbang!</a></h1>
+    <div id="grid">
+      <ul class="mylist">
+        <li><a href="cookie.html">Cookie</a></li>
+        <li><a href="cake.html">Cake</a></li>
+        <li><a href="etc.html" id="current">Etc</a></li>
+      </ul>
+      <div id="article">
+        <p>*사진을 클릭하면 레시피를 볼 수 있어요 :)</p>
+        <div class="container">
+          <a href="etc1.html" class="image"><img src="etc1.jpg"></a>
+          <a href="etc2.html" class="image"><img src="etc2.jpg"></a>
+          <a href="etc3.html" class="image"><img src="etc3.jpg"></a>
+        </div>
+        <div id="text">
+          <p>호두 파이<br>맛: * * * * *<br>난이도: 중하</p>
+          <p>생크림 스콘<br>맛: * * *<br>난이도: 하</p>
+          <p>레몬 마들렌<br>맛: * * * * *<br>난이도: 중상</p>
+     </div>
+   </div>
+  </div>
+</body>
+</html>

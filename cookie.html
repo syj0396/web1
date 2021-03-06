@@ -34,17 +34,14 @@
     padding-top:20px;
   }
   #grid #article{
+    display: grid;
+    grid-template-rows:50px 1fr 1fr;
     padding-left:90px;
-    width: 1800px;
-    height: 600px;
+    padding-top:20px;
   }
   #current{
     font-weight: bold;
     color: #505050;
-  }
-  .image {
-    padding-right:25px;
-    width:50%;
   }
   p {
     font-size: 18px;
@@ -63,10 +60,20 @@
     font-size: 18px;
   }
   img {
-    width:25%;
-    padding-top: 50px;
+    width:100%;
+    height:100%;
   }
-
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top:10px;
+  }
+  .image {padding-right: 20px;}
+  #text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align:center;
+  }
   h2, h3, strong {
     color:#505050;
   }
@@ -82,9 +89,16 @@
         <li><a href="etc.html">Etc</a></li>
       </ul>
       <div id="article">
-        <a href="cookie1.html" class="image"><img src="cookie1.jpg"></a>
-        <a href="cookie2.html" class="image"><img src="cookie2.jpg"></a>
-        <a href="cookie3.html" class="image"><img src="cookie3.jpg"></a>
+        <p>*사진을 클릭하면 레시피를 볼 수 있어요 :)</p>
+        <div class="container">
+          <a href="cookie1.html" class="image"><img src="cookie1.jpg"></a>
+          <a href="cookie2.html" class="image"><img src="cookie2.jpg"></a>
+          <a href="cookie3.html" class="image"><img src="cookie3.jpg"></a>
+      </div>
+      <div id="text">
+        <p>녹차체크쿠키<br>맛: * * * * *<br>난이도: 중상</p>
+        <p>초코칩쿠키<br>맛: * * * * *<br>난이도: 중</p>
+        <p>쿠키슈<br>맛: * * *<br>난이도: 상</p>
      </div>
    </div>
   </div>

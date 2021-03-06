@@ -34,10 +34,11 @@
     padding-top:20px;
   }
   #grid #article{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     padding-left:90px;
-    width: 1800px;
-    height: 600px;
   }
+  #info {padding-left:30px;}
   .image {
     padding-right:25px;
     width:50%;
@@ -59,7 +60,7 @@
     font-size: 18px;
   }
   img {
-    width:40%;
+    width:100%;
     padding-top: 50px;
     padding-bottom: 50px;
     float: left;
@@ -100,24 +101,26 @@
       </ul>
       <div id="article">
         <img src="cookie1.jpg">
-        <h2>Green-tea Check Cookie</h2>
-        <h3>Ingredients</h3>
-        <p>박력분 230g, 녹차가루 10g, 무염버터 100g, 설탕 90g, 소금 2g, 계란 1개</p>
-        <h3>Recipe</h3>
-        <ol>
-          <li>버터, 설탕, 소금, 계란을 모두 섞은 후 반으로 나눈다.</li>
-          <li>박력분 120g과 앞의 혼합물 반을 섞어 기본반죽을 만든다.</li>
-          <li>박력분 110g과 녹차가루 10g을 섞고 남은 혼합물 반과 섞어 녹차반죽을 만든다.</li>
-          <li>완성된 기본반죽과 녹차반죽을 냉장고에 넣어 40분 휴지시켜준다.</li>
-          <li>손이나 밀대를 이용해서 반죽을 가로 6~8cm, 두께 1.5~2cm로 만든다.</li>
-          <li>기본 반죽에 계란 흰자를 바른 후 녹차반죽을 붙여준다.</li>
-          <li>냉장고에 5~10분 휴지시킨 후, 4등분으로 잘라준다.</li>
-          <li>계란 흰자를 발라 4등분한 반죽을 모두 붙여준 후 5~6mm정도의 두께로 잘라준다.</li>
-          <li>180도 오븐에서 12~13분 구워주면 완성!!</li>
-        </ol>
-        <h3>Source</h3>
-        <p>원본 영상을 보려면
-        <a href="https://www.youtube.com/watch?v=orC1NOEJ_OQ" target="_blank" title="녹차체크쿠키 레시피" id="source">여기</a>를 클릭해주세요 :)</p>
+        <div id="info">
+          <h2>Green-tea Check Cookie</h2>
+          <h3>Ingredients</h3>
+          <p>박력분 230g, 녹차가루 10g, 무염버터 100g, 설탕 90g, 소금 2g, 계란 1개</p>
+          <h3>Recipe</h3>
+          <ol>
+            <li>버터, 설탕, 소금, 계란을 모두 섞은 후 반으로 나눈다.</li>
+            <li>박력분 120g과 앞의 혼합물 반을 섞어 기본반죽을 만든다.</li>
+            <li>박력분 110g과 녹차가루 10g을 섞고 남은 혼합물 반과 섞어 녹차반죽을 만든다.</li>
+            <li>완성된 기본반죽과 녹차반죽을 냉장고에 넣어 40분 휴지시켜준다.</li>
+            <li>손이나 밀대를 이용해서 반죽을 가로 6~8cm, 두께 1.5~2cm로 만든다.</li>
+            <li>기본 반죽에 계란 흰자를 바른 후 녹차반죽을 붙여준다.</li>
+            <li>냉장고에 5~10분 휴지시킨 후, 4등분으로 잘라준다.</li>
+            <li>계란 흰자를 발라 4등분한 반죽을 모두 붙여준 후 5~6mm정도의 두께로 잘라준다.</li>
+            <li>180도 오븐에서 12~13분 구워주면 완성!!</li>
+          </ol>
+          <h3>Source</h3>
+          <p>원본 영상을 보려면
+          <a href="https://www.youtube.com/watch?v=orC1NOEJ_OQ" target="_blank" title="녹차체크쿠키 레시피" id="source">여기</a>를 클릭해주세요 :)</p>
+        </div>
      </div>
    </div>
   </div>

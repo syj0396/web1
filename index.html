@@ -34,10 +34,13 @@
     padding-top:20px;
   }
   #grid #article{
-    padding-left:90px;
+    display: grid;
+    grid-template-rows:50px 1fr 1fr;
+    padding-left:70px;
+    padding-right:40px;
   }
   p {
-    font-size: 18px;
+    font-size: 20px;
   }
   ul.mylist {
     list-style: none;
@@ -53,21 +56,21 @@
     font-size: 18px;
   }
   img {
-    width:50%;
-    padding-top: 50px;
+    width:100%;
+    height:100%;
+    padding-top: 20px;
   }
   .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding-top:20px;
+    padding-bottom:20px;
   }
-  .item:nth-child(1) {
-    grid-column:1/3;
-    grid-row:1/3;
+  #second {padding-left:20px;}
+  h2 {
+    margin-bottom:0px; margin-top:30px;
   }
-  /*#grid #image {
-    grid-template-columns: 2fr 1fr;
-  }*/
+  h3 {font-size:22px;}
   h2, h3, strong {
     color:#505050;
   }
@@ -82,22 +85,28 @@
         <li><a href="cake.html">Cake</a></li>
         <li><a href="etc.html">Etc</a></li>
       </ul>
+
       <div id="article">
+        <h2>웹 사이트를 소개합니다.</h2>
         <div class="container">
           <div class="item"><img src="cookie3.jpg"></div>
-          <div class="item"><img src="cake3.jpg"></div>
-          <div class="item"><img src="etc2.jpg"></div>
+          <div class="item"><img src="cake3.jpg" id="second"></div>
         </div>
-        <h2>웹 사이트를 소개합니다.</h2>
-        <h3>하나,</h3>
-        <p>
-        코로나로 인해 바깥 활동을 자제해야 했던 이번 겨울방학, 저는 새로운 취미를 찾았습니다.
-      바로 홈베이킹인데요, <br>
-      미숙한 실력이지만 유튜브 영상을 보며 이것저것 만들고 지인들에게 선물하기도 했습니다:)<br>
-      <strong>Cookie, Cake, Etc로 목차를 구성했고, 각각을 클릭하면 베이킹 사진이 나오도록 만들었습니다.</strong></p>
-        <h3>둘,</h3>
-        <p>누군가의 일상, 패션 등의 게시물을 보면서 자신의 취향과 맞는 것을 보면 사진 속의 장소가 어디인지, 어디서 산 제품인지 궁금해지기 마련입니다.<br>
-          저는 <strong>제가 만든 빵 사진을 클릭하면 그 레시피와 레시피 영상을 볼 수 있도록</strong> 만들었습니다.</p>
+        <div id="text">
+
+          <h3>하나,</h3>
+          <p>
+          코로나로 인해 바깥 활동을 자제해야 했던 이번 겨울방학, 저는 새로운 취미를 찾았습니다.
+        바로 홈베이킹인데요, <br>
+        미숙한 실력이지만 유튜브 영상을 보며 이것저것 만들고 지인들에게 선물하기도 했습니다:)<br>
+        <strong>Cookie, Cake, Etc로 목차를 구성했고, 각각을 클릭하면 베이킹 사진이 나오도록 만들었습니다.</strong></p>
+          <h3>둘,</h3>
+          <p>사진 속 빵의 맛은 어떤지, 베이킹 난이도는 어떤지 궁금한 분들을 위해<br>
+            <strong>맛은 별점(5점 만점)으로, 난이도는 '상.중.하'로</strong> 표현하였습니다.</p>
+          <h3>셋,</h3>
+          <p>누군가의 일상, 패션 등의 게시물을 보면서 자신의 취향과 맞는 것을 보면 사진 속의 장소가 어디인지, 어디서 산 제품인지 궁금해지기 마련입니다.<br>
+            만드는 방법이 궁금한 분들을 위해, 저는 <strong>제가 만든 빵 사진을 클릭하면 그 레시피와 레시피 영상을 볼 수 있도록</strong> 만들었습니다.</p>
+        </div>
      </div>
   </div>
 </div>
